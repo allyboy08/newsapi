@@ -1,0 +1,29 @@
+/* #container {
+    width: 20vw;
+   
+}
+
+.data {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+img {
+    max-width: 200px;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
