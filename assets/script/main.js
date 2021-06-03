@@ -1,8 +1,4 @@
-// fetch("https://newsapi.org/v2/everything?q=tesla&language=en&apiKey=2cb272824c21486aaac6ccf5d55fcfe1")
-//     .then(response => response.json())
-//     .then((json) => {
-//     console.log(json);
-//     })
+
     
 
 const cards = document.getElementById("card");
@@ -26,84 +22,100 @@ const cards5 = document.getElementById("card5");
         console.log(url);
         let art=
         `<div class="data">
-        <img src=${(news.articles[0].urlToImage)}/>
-        <h1>
+        <a href=${JSON.stringify(news.articles[0].url)} target="_blank" id="link">
+        <img src=${JSON.stringify(news.articles[0].urlToImage)}/>
+        <h2>
         ${(news.articles[0].title)}
-        </h1>
+        </h2>
         <h3>
         ${(news.articles[0].description)}
         </h3>
-        <h4>
+        <h5>
         ${(news.articles[0].publishedAt)}
-        </h4>
-        <a href=${(news.articles[0].url)} target="_blank" id="link">Read more...</a>
+        </h5>
+        </a>
         </div>`;
+
         let art1 = 
         `<div class="data">
+        <a href=${JSON.stringify(news.articles[1].url)} target="_blank" id="link">
         <img src=${JSON.stringify(news.articles[1].urlToImage)}/>
         <h2>
-        ${JSON.stringify(news.articles[1].title)}
+        ${(news.articles[1].title)}
         </h2>
         <h3>
-        ${JSON.stringify(news.articles[1].description)}
+        ${(news.articles[1].description)}
         </h3>
         <h5>
-        ${JSON.stringify(news.articles[1].publishedAt)}
+        ${(news.articles[1].publishedAt)}
         </h5>
-        <a href=${(news.articles[1].url)} target="_blank" id="link">Read more...</a>
+        </a>
         </div>`;
+        
         let art2 = 
         `<div class="data">
+        <a href=${JSON.stringify(news.articles[2].url)} target="_blank" id="link">
         <img src=${JSON.stringify(news.articles[2].urlToImage)}/>
-        <h1>
-        ${JSON.stringify(news.articles[2].title)}
-        </h1>
+        <h2>
+        ${(news.articles[2].title)}
+        </h2>
         <h3>
-        ${JSON.stringify(news.articles[0].description)}
+        ${(news.articles[2].description)}
         </h3>
-        <h4>
-        ${JSON.stringify(news.articles[0].publishedAt)}
-        </h4>
+        <h5>
+        ${(news.articles[2].publishedAt)}
+        </h5>
+        </a>
         </div>`;
+
         let art3 = 
         `<div class="data">
+        <a href=${JSON.stringify(news.articles[3].url)} target="_blank" id="link">
         <img src=${JSON.stringify(news.articles[3].urlToImage)}/>
-        <h1>
-        ${JSON.stringify(news.articles[3].title)}
-        </h1>
+        <h2>
+        ${(news.articles[3].title)}
+        </h2>
         <h3>
-        ${JSON.stringify(news.articles[0].description)}
+        ${(news.articles[3].description)}
         </h3>
-        <h4>
-        ${JSON.stringify(news.articles[0].publishedAt)}
-        </h4>
+        <h5>
+        ${(news.articles[3].publishedAt)}
+        </h5>
+        </a>
         </div>`;
+
         let art4 = 
         `<div class="data">
+        <a href=${JSON.stringify(news.articles[4].url)} target="_blank" id="link">
         <img src=${JSON.stringify(news.articles[4].urlToImage)}/>
-        <h1>
-        ${JSON.stringify(news.articles[4].title)}
-        </h1>
+        <h2>
+        ${(news.articles[4].title)}
+        </h2>
         <h3>
-        ${JSON.stringify(news.articles[0].description)}
+        ${(news.articles[4].description)}
         </h3>
-        <h4>
-        ${JSON.stringify(news.articles[0].publishedAt)}
-        </h4>
+        <h5>
+        ${(news.articles[4].publishedAt)}
+        </h5>
+        </a>
         </div>`;
+
         let art5 = 
         `<div class="data">
+        <a href=${JSON.stringify(news.articles[5].url)} target="_blank" id="link">
         <img src=${JSON.stringify(news.articles[5].urlToImage)}/>
-        <h1>
-        ${JSON.stringify(news.articles[5].title)}
-        </h1>
+        <h2>
+        ${(news.articles[5].title)}
+        </h2>
         <h3>
-        ${JSON.stringify(news.articles[0].description)}
+        ${(news.articles[5].description)}
         </h3>
-        <h4>
-        ${JSON.stringify(news.articles[0].publishedAt)}
-        </h4>
+        <h5>
+        ${(news.articles[5].publishedAt)}
+        </h5>
+        </a>
         </div>`;
+
         cards.innerHTML = art;
         cards1.innerHTML = art1;
         cards2.innerHTML = art2;

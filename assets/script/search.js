@@ -9,9 +9,10 @@ const card5 = document.getElementById("card5");
 
 //seaching data
 function searchArticle() {
+	const lang = document.getElementById("dropdown").value;
 	const search = document.getElementsByTagName("input")[0].value;
 	const apiKey = "2cb272824c21486aaac6ccf5d55fcfe1";
-	const url = `https://newsapi.org/v2/everything?q=${search}&apiKey=${apiKey}`;
+	const url = `https://newsapi.org/v2/everything?q=${search}&language=${lang}&apiKey=${apiKey}`;
 	console.log(url);
 	const request = new Request(url);
 // Fetch the data
@@ -22,50 +23,98 @@ function searchArticle() {
 		console.log(search);
 			let art=
 			`<div class="data">
+			<a href=${JSON.stringify(news.articles[0].url)} target="_blank" id="link">
 			<img src=${JSON.stringify(news.articles[0].urlToImage)}/>
-			<h1>
-			${JSON.stringify(news.articles[0].title)}
-			</h1>
+			<h2>
+			${(news.articles[0].title)}
+			</h2>
 			<h3>
-			${JSON.stringify(news.articles[0].description)}
+			${(news.articles[0].description)}
 			</h3>
-			<h4>
-			${JSON.stringify(news.articles[0].publishedAt)}
+			<h5>
+			${(news.articles[0].publishedAt)}
+			</h5>
+			</a>
 			</div>`;
+	
 			let art1 = 
 			`<div class="data">
+			<a href=${JSON.stringify(news.articles[1].url)} target="_blank" id="link">
 			<img src=${JSON.stringify(news.articles[1].urlToImage)}/>
-			<h1>
-			${JSON.stringify(news.articles[1].title)}
-			</h1>
+			<h2>
+			${(news.articles[1].title)}
+			</h2>
+			<h3>
+			${(news.articles[1].description)}
+			</h3>
+			<h5>
+			${(news.articles[1].publishedAt)}
+			</h5>
+			</a>
 			</div>`;
+	
 			let art2 = 
 			`<div class="data">
+			<a href=${JSON.stringify(news.articles[2].url)} target="_blank" id="link">
 			<img src=${JSON.stringify(news.articles[2].urlToImage)}/>
-			<h1>
-			${JSON.stringify(news.articles[2].title)}
-			</h1>
+			<h2>
+			${(news.articles[2].title)}
+			</h2>
+			<h3>
+			${(news.articles[2].description)}
+			</h3>
+			<h5>
+			${(news.articles[2].publishedAt)}
+			</h5>
+			</a>
 			</div>`;
+	
 			let art3 = 
 			`<div class="data">
+			<a href=${JSON.stringify(news.articles[3].url)} target="_blank" id="link">
 			<img src=${JSON.stringify(news.articles[3].urlToImage)}/>
-			<h1>
-			${JSON.stringify(news.articles[3].title)}
-			</h1>
+			<h2>
+			${(news.articles[3].title)}
+			</h2>
+			<h3>
+			${(news.articles[3].description)}
+			</h3>
+			<h5>
+			${(news.articles[3].publishedAt)}
+			</h5>
+			</a>
 			</div>`;
+	
 			let art4 = 
 			`<div class="data">
+			<a href=${JSON.stringify(news.articles[4].url)} target="_blank" id="link">
 			<img src=${JSON.stringify(news.articles[4].urlToImage)}/>
-			<h1>
-			${JSON.stringify(news.articles[4].title)}
-			</h1>
+			<h2>
+			${(news.articles[4].title)}
+			</h2>
+			<h3>
+			${(news.articles[4].description)}
+			</h3>
+			<h5>
+			${(news.articles[4].publishedAt)}
+			</h5>
+			</a>
 			</div>`;
+	
 			let art5 = 
 			`<div class="data">
+			<a href=${JSON.stringify(news.articles[5].url)} target="_blank" id="link">
 			<img src=${JSON.stringify(news.articles[5].urlToImage)}/>
-			<h1>
-			${JSON.stringify(news.articles[5].title)}
-			</h1>
+			<h2>
+			${(news.articles[5].title)}
+			</h2>
+			<h3>
+			${(news.articles[5].description)}
+			</h3>
+			<h5>
+			${(news.articles[5].publishedAt)}
+			</h5>
+			</a>
 			</div>`;
 			card.innerHTML = art;
 			card1.innerHTML = art1;

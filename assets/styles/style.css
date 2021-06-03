@@ -1,7 +1,11 @@
+.head {
+    text-align: center;
+}
 
-
-#link {
-    display: block;
+a {
+    text-decoration: none;
+    /* display: none; */
+    color: black;
 }
 
 img {
@@ -14,15 +18,22 @@ img {
 #find{
     padding: 10px;
 }
+
+#dropdown {
+    padding: 10px;
+}
+
+#searchbtn {
+    padding: 10px;
+}
+
 #search {
     display: flex;
     justify-content: end;
     align-items: center;
     flex-wrap: wrap;
+    margin: 15px;
     
-    /* position: absolute;
-    top: 0%;
-    right: 0%; */
     
 }
 

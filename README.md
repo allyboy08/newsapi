@@ -4,4 +4,4 @@
 # The data is called from the api in javescript as a backend because I was not exposed to node.js 
 
 ## Install dev
-npm i
+## npm i
