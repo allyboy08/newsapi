@@ -12,7 +12,7 @@ const cards3 = document.getElementById("card3");
 const cards4 = document.getElementById("card4");
 const cards5 = document.getElementById("card5");
 
-// function searchArticle() {
+
 	
 	const apiKey = "2cb272824c21486aaac6ccf5d55fcfe1";
 	const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
