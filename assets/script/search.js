@@ -1,4 +1,4 @@
-//cards
+
 const card = document.getElementById("card");
 const card1 = document.getElementById("card1");
 const card2 = document.getElementById("card2");

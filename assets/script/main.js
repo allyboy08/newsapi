@@ -123,7 +123,7 @@ const cards5 = document.getElementById("card5");
         cards4.innerHTML = art4;
         cards5.innerHTML = art5;
     });
-// }
+
 		
 
 
