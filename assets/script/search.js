@@ -26,6 +26,9 @@ function searchArticle() {
 			<h1>
 			${JSON.stringify(news.articles[0].title)}
 			</h1>
+			<h3>
+			${JSON.stringify(news.articles[0].description)}
+			</h3>
 			<h4>
 			${JSON.stringify(news.articles[0].publishedAt)}
 			</div>`;
