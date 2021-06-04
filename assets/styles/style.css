@@ -4,14 +4,11 @@
 
 a {
     text-decoration: none;
-    
     color: black;
 }
 
 img {
-    /* max-width: 200px; */
-    /* width: 100%;
-    margin-bottom: 40px; */
+    
     height: 200px;
     width: 100%;
 }
@@ -21,6 +18,21 @@ img {
 
 #dropdown {
     padding: 10px;
+    
+}
+
+#dropdownc {
+    padding: 10px;
+    
+}
+
+#drop {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    padding: 10px;
 }
 
 #searchbtn {
@@ -29,15 +41,14 @@ img {
 
 #search {
     display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 15px;
+    justify-content: center;
+    
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    padding: 10px;
     
     
 }
-
-
 
 #container {
     display: grid;

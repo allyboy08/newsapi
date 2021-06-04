@@ -9,12 +9,16 @@
   </head>
   <body>
       <div id="search">
+        
         <input
         type="text"
        
         id="find"
+        placeholder="Search..."
         >
-        <select id="dropdown">
+        
+        <select id="dropdown" onchange="window.location.reload()">
+          <option value="">Language</option>
           <option value="en">English</option>
           <option value="ru">Russian</option>
           <option value="de">German</option>
@@ -23,9 +27,26 @@
           <option value="it">Italian</option>
           <option value="zh">Chinese</option>
         </select>
+
+        
+        
       <button id="searchbtn" onclick="searchArticle()">Search</button>
       </div>
+      
       <h1 class="head">Top stories</h1>
+      <h3 class="head">Category:</h3>
+      <div id="drop">
+      <select id="dropdownc" onchange="window.location.reload()">
+        
+        <option value="general">general</option>
+        <option value="entertainment">entertainment</option>
+        <option value="business">business</option>
+        <option value="health">health</option>
+        <option value="science">science</option>
+        <option value="sports">sports</option>
+        <option value="technology">technology</option>
+      </select>
+      </div>
 
       <div id="container">
           <div id="card"></div>

@@ -9,9 +9,9 @@ const cards4 = document.getElementById("card4");
 const cards5 = document.getElementById("card5");
 
 
-	
+    const cat = document.getElementById("dropdownc").value;
 	const apiKey = "2cb272824c21486aaac6ccf5d55fcfe1";
-	const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+	const url = `https://newsapi.org/v2/top-headlines?country=za&category=${cat}&apiKey=${apiKey}`;
 	console.log(url);
 	const request = new Request(url);
 // Fetch the data

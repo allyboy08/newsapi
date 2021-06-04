@@ -9,6 +9,7 @@ const card5 = document.getElementById("card5");
 
 //seaching data
 function searchArticle() {
+	// const cats = document.getElementById("dropdownc").value;
 	const lang = document.getElementById("dropdown").value;
 	const search = document.getElementsByTagName("input")[0].value;
 	const apiKey = "2cb272824c21486aaac6ccf5d55fcfe1";
