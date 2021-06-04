@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/media.css" />
     
   </head>
   <body>
@@ -18,7 +19,6 @@
         >
         
         <select id="dropdown" onchange="window.location.reload()">
-          <option value="">Language</option>
           <option value="en">English</option>
           <option value="ru">Russian</option>
           <option value="de">German</option>
@@ -33,11 +33,9 @@
       <button id="searchbtn" onclick="searchArticle()">Search</button>
       </div>
       
-      <h1 class="head">Top stories</h1>
-      <h3 class="head">Category:</h3>
-      <div id="drop">
+      <h1 class="head">Top Stories
+      
       <select id="dropdownc" onchange="window.location.reload()">
-        
         <option value="general">general</option>
         <option value="entertainment">entertainment</option>
         <option value="business">business</option>
@@ -46,7 +44,8 @@
         <option value="sports">sports</option>
         <option value="technology">technology</option>
       </select>
-      </div>
+    </h1>
+     
 
       <div id="container">
           <div id="card"></div>

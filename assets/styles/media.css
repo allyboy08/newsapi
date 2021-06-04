@@ -1,0 +1,68 @@
+@media screen and (max-width: 768px) {
+    .head {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    img {
+
+        height: 200px;
+        width: 100%;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: none;
+        grid-gap: 30px;
+        margin-bottom: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+    
+    #card,
+    #card1,
+    #card2,
+    #card3,
+    #card4,
+    #card5 {
+        border-bottom: 2px solid blue;
+        margin-top: 10px;
+    }
+
+    #find{
+        padding: 10px;
+    }
+    
+    #dropdown {
+        padding: 10px;
+        
+    }
+    
+    #dropdownc {
+        padding: 10px;
+        
+    }
+    
+    
+    
+    #searchbtn {
+        padding: 10px;
+    }
+    
+    #search {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 5px;
+        
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+}

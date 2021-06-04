@@ -26,14 +26,7 @@ img {
     
 }
 
-#drop {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-    padding: 10px;
-}
+
 
 #searchbtn {
     padding: 10px;
@@ -41,7 +34,7 @@ img {
 
 #search {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     
     /* flex-wrap: wrap; */
     flex-direction: row;
@@ -59,3 +52,19 @@ img {
     margin-right: 85px;
     margin-top: 30px;
 }
+
+#card,
+#card1,
+#card2,
+#card3,
+#card4,
+#card5 {
+    border-bottom: 2px solid blue;
+    margin-top: 10px;
+}
+
+
+/* .data {
+    border-bottom: 2px solid blue;
+    margin-top: 10px;
+} */
